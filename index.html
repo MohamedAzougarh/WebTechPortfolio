@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+
+  <!-- Navigatiebalk -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/logoweb.png" alt="Mijn Logo" class="logo-img">
+            </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projecten.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hoofdinhoud -->
+  <main class="flex-grow-1">
+    <div class="container my-5">
+      <div class="row">
+
+        <!-- Portfolio sectie -->
+        <div class="col-lg-8 mb-4">
+          <div class="portfolio-card p-3">
+            <img src="../assets/cyber_sfbeeld.png" alt="Portfolio" class="portfolio-image mb-3">
+            <h1 class="section-title">Portfolio</h1>
+            <p>Welkom, fijn dat je hier bent. In mijn portfolio ontdek je mijn projecten, mijn passie en mijn ervaring.  
+            Gebruik de navigatiebalk hierboven om verder te verkennen..</p>
+            <p>In mijn portfolio vind je een verzameling van projecten waar ik met trots aan heb gewerkt. Elk project weerspiegelt mijn groei, vaardigheden en toewijding aan cybersecurity en technologie.
+            Mijn doel is om veilige, efficiënte en innovatieve oplossingen te creëren die organisaties helpen hun digitale omgeving te beschermen.</p>
+            <h2 class="section-title">Skills</h2>
+            <ul>
+              <li>Threat Analysis - ik herken en beoordeel mogelijke beveiligingsrisico's</li>
+              <li>Network Security Fundamentals - ik begrijp hoe firewalls, protocollen en netwerkbeveiliging werken</li>
+              <li>Vulnerability Assessment - ik spoor kwetsbaarheden op en analyseer ze</li>
+              <li>Incident Response - ik reageer gepast op beveiligingsincidenten</li>
+              <li>Ethical Hacking Basics - ik begrijp aanvalstechnieken om systemen beter te beschermen</li>
+            </ul>
+            <h2 class="section-title mt-4">Locatie</h2>
+            <div id="map"></div>
+            <div class="mobile-divider"></div>
+          </div>
+        </div>
+
+        <!-- About sectie -->
+        <div class="col-lg-4">
+          <div class="about-card p-3">
+            <img src="../assets/coding_sfbeeld.jpg" alt="Portfolio" class="about-image mb-3">
+            <h3 class="section-title">About Me</h3>
+            <p>Ik ben Mohamed Azougarh, 21 jaar oud en werk als Cybersecurity Consultant.</p>
+            <p>Mijn passie ligt in het beveiligen van digitale omgevingen en het helpen van organisaties om hun systemen en data te beschermen.</p>
+            <p>Fitness is mijn uitlaatklep, waar ik mijn discipline, focus en doorzettingsvermogen train, dezelfde kwaliteiten die ik dagelijks inzet als IT'er.</p>
+            <h3 class="section-title">Talen</h3>
+            <div class="lang">
+              <span>Nederlands</span>
+              <div class="bar"><div style="width:90%"></div></div>
+            </div>
+
+            <div class="lang">
+              <span>Engels</span>
+              <div class="bar"><div style="width:80%"></div></div>
+            </div>
+
+            <div class="lang">
+              <span>Spaans</span>
+              <div class="bar"><div style="width:90%"></div></div>
+            </div>
+
+            <div class="lang">
+              <span>Frans</span>
+              <div class="bar"><div style="width:60%"></div></div>
+            </div>
+
+            <div class="lang">
+              <span>Arabisch</span>
+              <div class="bar"><div style="width:70%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-3">
+    <p class="mb-0">© 2025 Mijn Portfolio - Alle rechten voorbehouden</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <script src="/js/home.js"></script>
+</body>
+</html>

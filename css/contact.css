@@ -1,0 +1,88 @@
+/* ========== Kleurenpalet ========== */
+:root {
+  --black: #000000;
+  --white: #FFFFFF;
+  --smoky-day: #A69F95;
+  --steel: #7A7A7A;
+  --midnight-pearl: #606B73;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-dark .nav-link {
+  color: var(--smoky-day);
+}
+
+.navbar-brand{
+  padding: 0;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+  color: var(--white);
+}
+
+.contact-section {
+  padding: 80px 20px;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--midnight-pearl);
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid var(--steel);
+  padding: 12px;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--midnight-pearl);
+  box-shadow: 0 0 5px rgba(96, 107, 115, 0.3);
+}
+
+.btn-custom {
+  background-color: var(--midnight-pearl);
+  color: var(--white);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-custom:hover {
+  background-color: var(--smoky-day);
+  transform: scale(1.03);
+}
+
+.footer {
+  background-color: var(--midnight-pearl);
+  color: var(--white);
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 40px 15px;
+    }
+}

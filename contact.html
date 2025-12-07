@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/contact.css"/>
+  </head>
+  <body>
+  <!-- Navigatiebalk -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/logoweb.png" alt="Mijn Logo" class="logo-img">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="projecten.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contactsectie -->
+    <section class="contact-section container">
+      <h2>Contact</h2>
+
+      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" class="col-md-8 col-lg-6">
+
+        <div class="mb-3">
+          <div class="form-group">
+            <label for="name" class="form-label">Voornaam</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Je Voornaam" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="form-group">
+            <label for="name" class="form-label">Achternaam</label>
+            <input type="text" class="form-control" id="Aname" name="Aname" placeholder="Je Achternaam" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="form-group">
+            <label for="email" class="form-label">E-mailadres</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Je e-mailadres" required>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="form-group">
+            <label for="subject" class="form-label">Onderwerp</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Waar gaat je bericht over?" required>
+          </div>
+        </div>
+        
+        <div class="mb-3">
+          <div class="form-group">
+            <label for="message" class="form-label">Bericht</label>
+            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Typ hier je bericht..." required></textarea>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="form-group">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-custom">Verzenden</button>
+
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center py-3">
+      <p class="mb-0">© 2025 Mijn Portfolio - Alle rechten voorbehouden</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
